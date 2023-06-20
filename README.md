@@ -1,7 +1,7 @@
-# Full Stack Open
-Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.
+# [Full Stack Open](https://fullstackopen.com/en/)
+Course hosted by the Department of Computer Science at the University of Helsinki. 
 
-Course hosted by the Department of Computer Science at the University of Helsinki.
+Main repository for Parts 1-7 located [here](https://github.com/leebissessar5/full-stack-open).
 
 ## Part 12
 In this part, we will learn how to package code into standard units of software called containers. These containers can help us develop software faster and easier than before. Along the way, we will also explore a completely new viewpoint for web development outside of the now-familiar Node.js backend and React frontend.
