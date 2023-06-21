@@ -1,0 +1,4 @@
+redis-cli
+KEYS *
+GET count
+SET count 9001
