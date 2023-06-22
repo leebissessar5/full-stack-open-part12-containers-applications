@@ -1,5 +1,7 @@
 .dockerignore
+.git
 .gitignore
+.env
+npm-debug.log
 node_modules
-./redis_data:/data
 Dockerfile
