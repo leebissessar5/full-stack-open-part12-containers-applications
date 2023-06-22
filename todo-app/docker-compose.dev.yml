@@ -10,6 +10,9 @@ services:
         - ./todo-frontend:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.dev.yml"
       ports:
         - 3001:3001
+      environment:
+        - REACT_APP_BACKEND_URL=http://localhost:8080/api
+        - PORT=3001
       container_name: todo-frontend-dev
 
     mongo:
@@ -21,7 +24,7 @@ services:
         MONGO_INITDB_ROOT_PASSWORD: example
         MONGO_INITDB_DATABASE: the_database
       volumes: 
-        - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+        - ./todo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
         - mongo_data:/data/db
       container_name: mongo
 
@@ -31,7 +34,7 @@ services:
         - 6378:6379
       command: ['redis-server', '--appendonly', 'yes'] # Overwrite the CMD
       volumes: # Declare the volume
-        - ./redis_data:/data
+        - ./todo-backend/redis_data:/data
       container_name: redis
 
     server:
