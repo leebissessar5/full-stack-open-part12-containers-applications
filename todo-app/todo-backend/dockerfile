@@ -2,15 +2,10 @@ FROM node:16
   
 WORKDIR /usr/src/app
 
-
 COPY --chown=node:node . .
-RUN npm ci 
+RUN npm ci --only=production
 
-ENV DEBUG=playground:*
-ENV MONGO_URL=mongodb://localhost:3456/the_database
-ENV REDIS_URL=localhost:6378
-ENV PORT=3000
-
+ENV DEBUG=todo-backend:*
 
 USER node
 CMD npm start
