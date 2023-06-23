@@ -32,13 +32,13 @@ app.use(express.json())
 app.use(middleware.tokenHandler)
 app.use(middleware.requestLogger)
 
-app.use('/api/blogs', middleware.userExtractor, blogsRouter)
-app.use('/api/users', usersRouter)
-app.use('/api/login', loginRouter)
+app.use('/blogs', middleware.userExtractor, blogsRouter)
+app.use('/users', usersRouter)
+app.use('/login', loginRouter)
 
 if (process.env.NODE_ENV === 'test') {
   const testingRouter = require('./controllers/testing')
-  app.use('/api/testing', testingRouter)
+  app.use('/testing', testingRouter)
 }
 
 app.use(middleware.unknownEndpoint)
