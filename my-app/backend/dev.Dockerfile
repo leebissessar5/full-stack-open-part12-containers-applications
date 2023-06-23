@@ -8,6 +8,5 @@ RUN npm install
 
 ENV DEBUG=backend:*
 
-
 USER node
 CMD npm run dev
