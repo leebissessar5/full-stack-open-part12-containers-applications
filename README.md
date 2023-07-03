@@ -10,4 +10,6 @@ We will utilize containers to create immutable execution environments for our No
 
 Exercises Complete: 22/22 (**100%**)
 
+Time Taken: at most 14 hrs
+
 [Course Certificate](https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/432e9984b69807386fd273393f700f42)
