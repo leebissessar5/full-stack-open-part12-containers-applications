@@ -8,6 +8,6 @@ In this part, we will learn how to package code into standard units of software 
 
 We will utilize containers to create immutable execution environments for our Node.js and React projects. Containers also make it easy to include multiple services with our projects. With the flexibility, we will explore and experiment with many different and popular tools by utilizing containers.
 
-Exercises Complete: 22/22 (100%)
+Exercises Complete: 22/22 (**100%**)
 
 [Course Certificate](https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/432e9984b69807386fd273393f700f42)
